@@ -232,47 +232,47 @@ unlet s:colors
 
 " End of gotham-esque settings
 
-hi SpecialComment ctermfg=1 ctermbg=NONE cterm=NONE
-hi Typedef ctermfg=60 ctermbg=NONE cterm=bold
-hi PreCondit ctermfg=137 ctermbg=NONE cterm=NONE
-hi Include ctermfg=1 ctermbg=NONE cterm=NONE
-hi Float ctermfg=248 ctermbg=NONE cterm=NONE
-hi StatusLineNC ctermfg=144 ctermbg=239 cterm=bold
+hi SpecialComment guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi Typedef guifg=60 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi PreCondit guifg=137 guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
+hi Include guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi Float guifg=248 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi StatusLineNC guifg=144 guibg=239 gui=bold ctermfg=144 ctermbg=239 cterm=bold
 "hi CTagsMember -- no settings --
 "hi CTagsGlobalConstant -- no settings --
 "hi Ignore -- no settings --
-hi Debug ctermfg=1 ctermbg=NONE cterm=NONE
-hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
-hi Conditional ctermfg=1 ctermbg=NONE cterm=bold
-hi StorageClass ctermfg=60 ctermbg=NONE cterm=bold
-hi Label ctermfg=1 ctermbg=NONE cterm=bold
+hi Debug guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi SpecialChar guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi Conditional guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
+hi StorageClass guifg=60 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Label guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 "hi CTagsImport -- no settings --
 "hi CTagsGlobalVariable -- no settings --
-hi Delimiter ctermfg=1 ctermbg=NONE cterm=NONE
+hi Delimiter guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 "hi EnumerationValue -- no settings --
-hi Character ctermfg=248 ctermbg=NONE cterm=NONE
-hi Boolean ctermfg=248 ctermbg=NONE cterm=NONE
-hi Operator ctermfg=253 ctermbg=NONE cterm=bold
+hi Character guifg=248 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi Boolean guifg=248 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi Operator guifg=253 guibg=NONE gui=bold ctermfg=253 ctermbg=NONE cterm=bold
 "hi Union -- no settings --
 "hi Question -- no settings --
-hi WarningMsg ctermfg=248 ctermbg=88 cterm=NONE
-hi VisualNOS ctermfg=235 ctermbg=189 cterm=underline
-hi Define ctermfg=1 ctermbg=NONE cterm=NONE
-hi Function ctermfg=60 ctermbg=NONE cterm=bold
+hi WarningMsg guifg=248 guibg=88 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
+hi VisualNOS guifg=235 guibg=189 gui=underline ctermfg=235 ctermbg=189 cterm=underline
+hi Define guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi Function guifg=60 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 "hi EnumerationName -- no settings --
 "hi MarkdownCodeBlock 
-hi MoreMsg ctermfg=1 ctermbg=NONE cterm=bold
-hi SpellCap ctermfg=189 ctermbg=235 cterm=underline
-hi VertSplit ctermfg=235 ctermbg=239 cterm=bold
-hi Exception ctermfg=1 ctermbg=NONE cterm=bold
-hi Keyword ctermfg=1 ctermbg=NONE cterm=bold
-hi Type ctermfg=60 ctermbg=NONE cterm=bold
-hi Error ctermfg=248 ctermbg=88 cterm=NONE
+hi MoreMsg guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
+hi SpellCap guifg=189 guibg=235 gui=underline ctermfg=189 ctermbg=235 cterm=underline
+hi VertSplit guifg=235 guibg=239 gui=bold ctermfg=235 ctermbg=239 cterm=bold
+hi Exception guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
+hi Keyword guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
+hi Type guifg=60 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Error guifg=248 guibg=88 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 "hi DefinedName -- no settings --
-hi Tag ctermfg=1 ctermbg=NONE cterm=NONE
-hi LocalVariable ctermfg=209 ctermbg=NONE cterm=bold
-hi Repeat ctermfg=1 ctermbg=NONE cterm=bold
+hi Tag guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi LocalVariable guifg=209 guibg=NONE gui=bold ctermfg=209 ctermbg=NONE cterm=bold
+hi Repeat guifg=1 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 "hi CTagsClass -- no settings --
-hi Structure ctermfg=60 ctermbg=NONE cterm=bold
-hi Macro ctermfg=1 ctermbg=NONE cterm=NONE
+hi Structure guifg=60 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Macro guifg=1 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 "hi clear -- no settings --
