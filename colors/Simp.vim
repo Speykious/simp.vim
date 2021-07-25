@@ -82,14 +82,14 @@ let s:colors.base23 = { 'gui': '#303030', 'cterm': 236 }
 let s:colors.base24 = { 'gui': '#3a3a3a', 'cterm': 237 }
 
 " Other colors.
-let s:colors.red     = { 'gui': '#af0000', 'cterm': 124 }
-let s:colors.orange  = { 'gui': '#d75f00', 'cterm': 166 }
-let s:colors.yellow  = { 'gui': '#ffaf00', 'cterm': 214 }
-let s:colors.magenta = { 'gui': '#5f87af', 'cterm': 67  }
-let s:colors.violet  = { 'gui': '#5f5f87', 'cterm': 60  }
-let s:colors.blue    = { 'gui': '#005f87', 'cterm': 24  }
-let s:colors.cyan    = { 'gui': '#00d7d7', 'cterm': 44  }
-let s:colors.green   = { 'gui': '#5fd787', 'cterm': 78  }
+let s:colors.red     = { 'gui': 'Red', 'cterm': 124 }
+let s:colors.orange  = { 'gui': 'Orange', 'cterm': 166 }
+let s:colors.yellow  = { 'gui': 'Yellow', 'cterm': 214 }
+let s:colors.magenta = { 'gui': 'Magenta', 'cterm': 67  }
+let s:colors.violet  = { 'gui': 'Violet', 'cterm': 60  }
+let s:colors.blue    = { 'gui': 'Blue', 'cterm': 24  }
+let s:colors.cyan    = { 'gui': 'Cyan', 'cterm': 44  }
+let s:colors.green   = { 'gui': 'Green', 'cterm': 78  }
 
 let s:colors.none    = { 'gui': 'NONE', 'cterm': 'NONE' }
 
