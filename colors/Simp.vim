@@ -1,4 +1,4 @@
-"this is using the vim-gotham style of setting most colors
+" This is using the vim-gotham style of setting most colors
 
 hi clear
 if exists('syntax on') | syntax reset | endif
@@ -56,42 +56,42 @@ endfunction
 let s:colors = {}
 
 " Base colors
-let s:colors.base0  = { 'cterm': 144 }
-let s:colors.base1  = { 'cterm':  52 }
-let s:colors.base2  = { 'cterm': 248 }
-let s:colors.base3  = { 'cterm': 235 }
-let s:colors.base4  = { 'cterm':   1 }
-let s:colors.base5  = { 'cterm':  60 }
-let s:colors.base6  = { 'cterm': 249 }
-let s:colors.base7  = { 'cterm': 137 }
-let s:colors.base8  = { 'cterm': 239 }
-let s:colors.base10 = { 'cterm':  66 }
-let s:colors.base11 = { 'cterm': 252 }
-let s:colors.base12 = { 'cterm': 130 }
-let s:colors.base13 = { 'cterm': 196 }
-let s:colors.base14 = { 'cterm': 189 }
-let s:colors.base15 = { 'cterm': 254 }
-let s:colors.base16 = { 'cterm': 242 }
-let s:colors.base17 = { 'cterm': 109 }
-let s:colors.base18 = { 'cterm': 251 }
-let s:colors.base19 = { 'cterm':  97 }
-let s:colors.base20 = { 'cterm':   8 }
-let s:colors.base21 = { 'cterm': 253 }
-let s:colors.base22 = { 'cterm': 246 }
-let s:colors.base23 = { 'cterm': 236 }
-let s:colors.base24 = { 'cterm': 237 }
+let s:colors.base0  = { 'gui': 144, 'cterm': 144 }
+let s:colors.base1  = { 'gui': 52, 'cterm':  52 }
+let s:colors.base2  = { 'gui': 248, 'cterm': 248 }
+let s:colors.base3  = { 'gui': 235, 'cterm': 235 }
+let s:colors.base4  = { 'gui': 1, 'cterm':   1 }
+let s:colors.base5  = { 'gui': 60, 'cterm':  60 }
+let s:colors.base6  = { 'gui': 249, 'cterm': 249 }
+let s:colors.base7  = { 'gui': 137, 'cterm': 137 }
+let s:colors.base8  = { 'gui': 239, 'cterm': 239 }
+let s:colors.base10 = { 'gui': 66, 'cterm':  66 }
+let s:colors.base11 = { 'gui': 252, 'cterm': 252 }
+let s:colors.base12 = { 'gui': 130, 'cterm': 130 }
+let s:colors.base13 = { 'gui': 196, 'cterm': 196 }
+let s:colors.base14 = { 'gui': 189, 'cterm': 189 }
+let s:colors.base15 = { 'gui': 254, 'cterm': 254 }
+let s:colors.base16 = { 'gui': 242, 'cterm': 242 }
+let s:colors.base17 = { 'gui': 109, 'cterm': 109 }
+let s:colors.base18 = { 'gui': 251, 'cterm': 251 }
+let s:colors.base19 = { 'gui': 97, 'cterm':  97 }
+let s:colors.base20 = { 'gui': 8, 'cterm':   8 }
+let s:colors.base21 = { 'gui': 253, 'cterm': 253 }
+let s:colors.base22 = { 'gui': 246, 'cterm': 246 }
+let s:colors.base23 = { 'gui': 236, 'cterm': 236 }
+let s:colors.base24 = { 'gui': 237, 'cterm': 237 }
 
 " Other colors.
-let s:colors.red     = { 'cterm': 124 }
-let s:colors.orange  = { 'cterm': 166 }
-let s:colors.yellow  = { 'cterm': 214 }
-let s:colors.magenta = { 'cterm': 67  }
-let s:colors.violet  = { 'cterm': 60  }
-let s:colors.blue    = { 'cterm': 24  }
-let s:colors.cyan    = { 'cterm': 44  }
-let s:colors.green   = { 'cterm': 78  }
+let s:colors.red     = { 'gui': 124, 'cterm': 124 }
+let s:colors.orange  = { 'gui': 166, 'cterm': 166 }
+let s:colors.yellow  = { 'gui': 214, 'cterm': 214 }
+let s:colors.magenta = { 'gui': 67, 'cterm': 67  }
+let s:colors.violet  = { 'gui': 60, 'cterm': 60  }
+let s:colors.blue    = { 'gui': 24, 'cterm': 24  }
+let s:colors.cyan    = { 'gui': 44, 'cterm': 44  }
+let s:colors.green   = { 'gui': 78, 'cterm': 78  }
 
-let s:colors.none    = { 'cterm': 'NONE' }
+let s:colors.none    = { 'gui': 'NONE', 'cterm': 'NONE' }
 
 " Normal modes
 call s:Col('Normal', 'base0', 'base3')

@@ -2,9 +2,7 @@
 
 My personal colorscheme for Vim forked from [Revolution](https://github.com/EdenEast/Revolution.vim).
 
-What changes is that I removed the airline theme and the `guibg` and `guifg` highlightings, because the `cterm` ones fit better with my system overall.
-
-Edit: well now I have to make the `gui` highlightings be explicitly the same as the `ctermbg` settings. :/
+What changes is that I removed the airline theme and replaced the `guibg` and `guifg` highlightings to be the same as the `cterm` ones, because they fit better with my system overall.
 
 ## Installation
 
