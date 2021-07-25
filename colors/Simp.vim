@@ -61,7 +61,7 @@ let s:colors.base1  = { 'gui': '#5f0000', 'cterm':  52 }
 let s:colors.base2  = { 'gui': '#a8a8a8', 'cterm': 248 }
 let s:colors.base3  = { 'gui': '#262626', 'cterm': 235 }
 let s:colors.base4  = { 'gui': '#800000', 'cterm':   1 }
-let s:colors.base5  = { 'gui': '#a62843', 'cterm':  60 }
+let s:colors.base5  = { 'gui': '#5f5f87', 'cterm':  60 }
 let s:colors.base6  = { 'gui': '#b2b2b2', 'cterm': 249 }
 let s:colors.base7  = { 'gui': '#af875f', 'cterm': 137 }
 let s:colors.base8  = { 'gui': '#4e4e4e', 'cterm': 239 }
@@ -232,8 +232,8 @@ unlet s:colors
 
 " End of gotham-esque settings
 
-hi SpecialComment guifg=#800000 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Typedef guifg=#a62843 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi SpecialComment guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi Typedef guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi PreCondit guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 hi Include guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Float guifg=#a8a8a8 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
@@ -241,7 +241,7 @@ hi StatusLineNC guifg=#afaf87 guibg=#4e4e4e gui=bold ctermfg=144 ctermbg=239 cte
 hi Debug guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi StorageClass guifg=#a62843 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi StorageClass guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Label guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi Delimiter guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Character guifg=#a8a8a8 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
@@ -250,16 +250,16 @@ hi Operator guifg=#dadada guibg=NONE gui=bold ctermfg=253 ctermbg=NONE cterm=bol
 hi WarningMsg guifg=#a8a8a8 guibg=#870000 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 hi VisualNOS guifg=#262626 guibg=#d7d7ff gui=underline ctermfg=235 ctermbg=189 cterm=underline
 hi Define guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Function guifg=#a62843 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Function guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi MoreMsg guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi SpellCap guifg=#d7d7ff guibg=#262626 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 hi VertSplit guifg=#262626 guibg=#4e4e4e gui=bold ctermfg=235 ctermbg=239 cterm=bold
 hi Exception guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi Keyword guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi Type guifg=#a62843 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Type guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Error guifg=#a8a8a8 guibg=#870000 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
 hi Tag guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi LocalVariable guifg=#ff875f guibg=NONE gui=bold ctermfg=209 ctermbg=NONE cterm=bold
 hi Repeat guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi Structure guifg=#a62843 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
+hi Structure guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Macro guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
