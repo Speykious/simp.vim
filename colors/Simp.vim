@@ -59,12 +59,12 @@ let s:colors = {}
 let s:colors.base0  = { 'gui': '#afaf87', 'cterm': 144 }
 let s:colors.base1  = { 'gui': '#5f0000', 'cterm':  52 }
 let s:colors.base2  = { 'gui': '#a8a8a8', 'cterm': 248 }
-let s:colors.base3  = { 'gui': '#262626', 'cterm': 235 }
+let s:colors.base3  = { 'gui': '#1f0d1c', 'cterm': 233 }
 let s:colors.base4  = { 'gui': '#a62843', 'cterm':   1 }
 let s:colors.base5  = { 'gui': '#5f5f87', 'cterm':  60 }
 let s:colors.base6  = { 'gui': '#b2b2b2', 'cterm': 249 }
 let s:colors.base7  = { 'gui': '#af875f', 'cterm': 137 }
-let s:colors.base8  = { 'gui': '#4e4e4e', 'cterm': 239 }
+let s:colors.base8  = { 'gui': '#10000f', 'cterm':   0 }
 let s:colors.base10 = { 'gui': '#5f8787', 'cterm':  66 }
 let s:colors.base11 = { 'gui': '#d0d0d0', 'cterm': 252 }
 let s:colors.base12 = { 'gui': '#af5f00', 'cterm': 130 }
@@ -144,7 +144,7 @@ call s:Col('NonText', 'base10')
 call s:Col('Todo', 'base13', 'base3')
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base3', 'base8')
+call s:Col('VertSplit', 'base8', 'base8')
 call s:Attr('VertSplit', 'bold')
 call s:Col('StatusLineNC', 'base0', 'base8')
 call s:Attr('StatusLineNC', 'bold')
