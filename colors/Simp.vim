@@ -56,15 +56,11 @@ endfunction
 let s:colors = {}
 
 " Base colors
-let s:colors.base0  = { 'gui': '#afaf87', 'cterm': 144 }
-let s:colors.base1  = { 'gui': '#5f0000', 'cterm':  52 }
 let s:colors.base2  = { 'gui': '#a8a8a8', 'cterm': 248 }
-let s:colors.base3  = { 'gui': '#1f0d1c', 'cterm': 233 }
 let s:colors.base4  = { 'gui': '#a62843', 'cterm':   1 }
 let s:colors.base5  = { 'gui': '#5f5f87', 'cterm':  60 }
 let s:colors.base6  = { 'gui': '#b2b2b2', 'cterm': 249 }
 let s:colors.base7  = { 'gui': '#af875f', 'cterm': 137 }
-let s:colors.base8  = { 'gui': '#10000f', 'cterm':   0 }
 let s:colors.base10 = { 'gui': '#5f8787', 'cterm':  66 }
 let s:colors.base11 = { 'gui': '#d0d0d0', 'cterm': 252 }
 let s:colors.base12 = { 'gui': '#af5f00', 'cterm': 130 }
@@ -91,24 +87,30 @@ let s:colors.blue    = { 'gui': '#223974', 'cterm': 24  }
 let s:colors.cyan    = { 'gui': '#60c2cd', 'cterm': 44  }
 let s:colors.green   = { 'gui': '#306b3d', 'cterm': 78  }
 
+let s:colors.bg_darker = { 'gui': '#10000f', 'cterm':   0 }
+let s:colors.bg_dark   = { 'gui': '#1f0d1c', 'cterm': 233 }
+let s:colors.fg_normal = { 'gui': '#afaf87', 'cterm': 144 }
+let s:colors.dark_red  = { 'gui': '#5f0000', 'cterm':  52 }
+let s:colors.dark_green = { 'gui': '#1b3020', 'cterm': 78 }
+
 let s:colors.none    = { 'gui': 'NONE', 'cterm': 'NONE' }
 
 " Normal modes
-call s:Col('Normal', 'base0')
+call s:Col('Normal', 'fg_normal')
 
 " Line, cursor and so on.
 call s:Col('Cursor', 'base15', 'base14')
 call s:Col('CursorLine', 'none', 'base24')
-call s:Col('CursorColumn', 'base0', 'base23')
-call s:Col('cursorim', 'base3', 'base1')
+call s:Col('CursorColumn', 'fg_normal', 'base23')
+call s:Col('cursorim', 'bg_dark', 'dark_red')
 
 " Sign column, line numbers.
 call s:Col('LineNr', 'magenta')
-call s:Col('SignColumn', 'base2', 'base3')
-call s:Col('ColorColumn', 'base0', 'base3')
+call s:Col('SignColumn', 'base2', 'bg_dark')
+call s:Col('ColorColumn', 'fg_normal', 'bg_dark')
 
 " Visual selection.
-call s:Col('Visual', 'base0', 'base1')
+call s:Col('Visual', 'fg_normal', 'dark_red')
 
 " Easy-to-guess code elements.
 call s:Col('Comment', 'base16')
@@ -123,11 +125,11 @@ call s:Col('Identifier', 'base4')
 call s:Col('Constant', 'base2')
 
 " Some HTML tags (<title>, some <h*>s)
-call s:Col('Title', 'base6', 'base1')
+call s:Col('Title', 'base6', 'dark_red')
 call s:Attr('Title', 'bold')
 
 " <a> tags.
-call s:Col('Underlined', 'base14', 'base3')
+call s:Col('Underlined', 'base14', 'bg_dark')
 call s:Attr('Underlined', 'underline')
 
 " Types, HTML attributes, Ruby constants (and class names).
@@ -141,12 +143,12 @@ call s:Col('PreProc', 'base19')
 call s:Col('NonText', 'base10')
 
 " TODO and similar tags.
-call s:Col('Todo', 'base13', 'base3')
+call s:Col('Todo', 'base13', 'bg_dark')
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'magenta', 'base3')
+call s:Col('VertSplit', 'magenta', 'bg_dark')
 " call s:Attr('VertSplit', 'bold')
-call s:Col('StatusLineNC', 'base0', 'base3')
+call s:Col('StatusLineNC', 'fg_normal', 'bg_dark')
 call s:Attr('StatusLineNC', 'bold')
 
 " Matching parenthesis.
@@ -158,62 +160,77 @@ call s:Col('SpecialKey', 'base10')
 call s:Attr('SpecialKey', 'bold')
 
 " Folds.
-call s:Col('Folded', 'base3', 'base2')
+call s:Col('Folded', 'bg_dark', 'base2')
 call s:Attr('Folded', 'bold')
-call s:Col('FoldColumn', 'base3', 'base2')
+call s:Col('FoldColumn', 'bg_dark', 'base2')
 call s:Attr('FoldColumn', 'bold')
 
 " Searching.
-call s:Col('Search', 'base0', 'base1')
-call s:Col('IncSearch', 'base0', 'base1')
+call s:Col('Search', 'fg_normal', 'dark_red')
+call s:Col('IncSearch', 'fg_normal', 'dark_red')
 
 " Popup menu.
-call s:Col('Pmenu', 'base0', 'base3')
-call s:Col('PmenuSel', 'base0', 'base1')
-call s:Col('PmenuSbar', 'base0', 'base20')
+call s:Col('Pmenu', 'fg_normal', 'bg_dark')
+call s:Col('PmenuSel', 'fg_normal', 'dark_red')
+call s:Col('PmenuSbar', 'fg_normal', 'base20')
 call s:Col('PmenuThumb', 'base15', 'base2')
 
 " Command line stuff.
 call s:Col('ErrorMsg', 'base11', 'base12')
-call s:Col('ModeMsg', 'base21', 'base3')
+call s:Col('ModeMsg', 'base21', 'bg_dark')
 call s:Attr('ModeMsg', 'bold')
 
 " Wild menu.
 " StatusLine determines the color of the non-active entries in the wild menu.
-call s:Col('StatusLine', 'base0', 'base1')
+call s:Col('StatusLine', 'fg_normal', 'dark_red')
 call s:Attr('StatusLine', 'bold')
-call s:Col('WildMenu', 'base0', 'base2')
+call s:Col('WildMenu', 'fg_normal', 'base2')
 
 " The 'Hit ENTER to continue prompt'.
 "call s:Col('Question', )
 
 " Tab line.
-call s:Col('TabLineSel', 'base0', 'base1')  " the selected tab
+call s:Col('TabLineSel', 'fg_normal', 'dark_red')  " the selected tab
 call s:Attr('TabLineSel', 'bold')
-call s:Col('TabLine', 'base3', 'base22')    " the non-selected tabs
+call s:Col('TabLine', 'bg_dark', 'base22')    " the non-selected tabs
 call s:Attr('TabLine', 'bold')
-call s:Col('TabLineFill', 'base3', 'base8') " the rest of the tab line
+call s:Col('TabLineFill', 'bg_dark', 'bg_darker') " the rest of the tab line
 call s:Attr('TabLineFill', 'bold')
 
 " Spelling.
-call s:Col('SpellBad', 'base14', 'base3')
+call s:Col('SpellBad', 'base14', 'bg_dark')
 call s:Attr('SpellBad', 'underline')
-call s:Col('SpellCap', 'base14', 'base3')
+call s:Col('SpellCap', 'base14', 'bg_dark')
 call s:Attr('SpellCap', 'underline')
-call s:Col('SpellLocal', 'base14', 'base3')
+call s:Col('SpellLocal', 'base14', 'bg_dark')
 call s:Attr('SpellLocal', 'underline')
-call s:Col('SpellRare', 'base14', 'base3')
+call s:Col('SpellRare', 'base14', 'bg_dark')
 call s:Attr('SpellRare', 'underline')
 
 " Diffing.
-call s:Col('DiffAdd', 'base0', 'base23')
-call s:Col('DiffChange', 'base0', 'base1')
-call s:Col('DiffDelete', 'base0', 'base3')
-call s:Col('DiffText', 'base0', 'base1')
+call s:Col('DiffAdd', 'fg_normal', 'dark_green')
+call s:Col('DiffChange', 'fg_normal', 'bg_darker')
+call s:Col('DiffDelete', 'red', 'bg_dark')
+call s:Col('DiffText', 'fg_normal', 'dark_red')
 
 " Directories (e.g. netrw).
 call s:Col('Directory', 'base5')
 call s:Attr('Directory', 'bold')
+
+" Barbar Buffer stuff
+call s:Col('BufferCurrent', 'magenta')
+call s:Col('BufferCurrentMod', 'magenta')
+call s:Col('BufferCurrentSign', 'magenta')
+call s:Col('BufferCurrentTarget', 'fg_normal', 'magenta')
+call s:Col('BufferVisibleTarget', 'fg_normal', 'magenta')
+call s:Col('BufferInactive', 'fg_normal', 'bg_darker')
+call s:Col('BufferInactiveMod', 'fg_normal', 'bg_darker')
+call s:Col('BufferInactiveSign', 'fg_normal', 'bg_darker')
+call s:Col('BufferInactiveIndex', 'fg_normal', 'bg_darker')
+call s:Col('BufferInactiveIcon', 'fg_normal', 'bg_darker')
+call s:Col('BufferOffset', 'fg_normal', 'bg_darker')
+call s:Col('BufferTabpages', 'red', 'bg_darker')
+call s:Col('BufferTabpageFill', 'fg_normal', 'bg_darker')
 
 " Cleanup =====================================================================
 
@@ -224,6 +241,7 @@ hi LspDiagnosticsDefaultHint        ctermfg=Magenta guifg=#cc32cc
 hi LspDiagnosticsDefaultError       ctermfg=Red     guifg=#cc1624
 hi LspDiagnosticsDefaultWarning     ctermfg=Yellow  guifg=#cc991b
 hi LspDiagnosticsDefaultInformation ctermfg=Blue    guifg=#0c74ce
+
 
 " End of gotham-esque settings
 
