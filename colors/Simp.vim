@@ -215,20 +215,15 @@ call s:Col('DiffText', 'base0', 'base1')
 call s:Col('Directory', 'base5')
 call s:Attr('Directory', 'bold')
 
-" Plugin =======================================================================
-
-" GitGutter
-call s:Col('GitGutterAdd', 'green', 'base3')
-call s:Col('GitGutterChange', 'yellow', 'base3')
-call s:Col('GitGutterDelete', 'red', 'base3')
-call s:Col('GitGutterChangeDelete', 'orange', 'base3')
-
-" vim-better-whitespace
-call s:Col('ExtraWhitespace', 'violet', 'yellow')
-
 " Cleanup =====================================================================
 
 unlet s:colors
+
+" Nvim-LSP diagnostic colors
+hi LspDiagnosticsDefaultHint        ctermfg=Magenta guifg=#cc32cc
+hi LspDiagnosticsDefaultError       ctermfg=Red     guifg=#cc1624
+hi LspDiagnosticsDefaultWarning     ctermfg=Yellow  guifg=#cc991b
+hi LspDiagnosticsDefaultInformation ctermfg=Blue    guifg=#0c74ce
 
 " End of gotham-esque settings
 
