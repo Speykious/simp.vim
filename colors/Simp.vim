@@ -94,7 +94,7 @@ let s:colors.green   = { 'gui': '#306b3d', 'cterm': 78  }
 let s:colors.none    = { 'gui': 'NONE', 'cterm': 'NONE' }
 
 " Normal modes
-call s:Col('Normal', 'base0', 'base3')
+call s:Col('Normal', 'base0')
 
 " Line, cursor and so on.
 call s:Col('Cursor', 'base15', 'base14')
@@ -103,9 +103,9 @@ call s:Col('CursorColumn', 'base0', 'base23')
 call s:Col('cursorim', 'base3', 'base1')
 
 " Sign column, line numbers.
-call s:Col('LineNr', 'base8')
-call s:Col('SignColumn', 'base3', 'base3')
-call s:Col('ColorColumn', 'base0', 'base24')
+call s:Col('LineNr', 'magenta')
+call s:Col('SignColumn', 'base2', 'base3')
+call s:Col('ColorColumn', 'base0', 'base3')
 
 " Visual selection.
 call s:Col('Visual', 'base0', 'base1')
@@ -144,13 +144,13 @@ call s:Col('NonText', 'base10')
 call s:Col('Todo', 'base13', 'base3')
 
 " The column separating vertical splits.
-call s:Col('VertSplit', 'base8', 'base8')
-call s:Attr('VertSplit', 'bold')
-call s:Col('StatusLineNC', 'base0', 'base8')
+call s:Col('VertSplit', 'magenta', 'base3')
+" call s:Attr('VertSplit', 'bold')
+call s:Col('StatusLineNC', 'base0', 'base3')
 call s:Attr('StatusLineNC', 'bold')
 
 " Matching parenthesis.
-call s:Col('MatchParen', 'base4')
+call s:Col('MatchParen', 'base15')
 call s:Attr('MatchParen', 'bold')
 
 " Special keys, e.g. some of the chars in 'listchars'. See ':h listchars'.
@@ -232,7 +232,6 @@ hi Typedef guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi PreCondit guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 hi Include guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Float guifg=#a8a8a8 guibg=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi StatusLineNC guifg=#afaf87 guibg=#4e4e4e gui=bold ctermfg=144 ctermbg=239 cterm=bold
 hi Debug guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
@@ -248,7 +247,6 @@ hi Define guifg=#a62843 guibg=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Function guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi MoreMsg guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi SpellCap guifg=#d7d7ff guibg=#262626 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi VertSplit guifg=#262626 guibg=#4e4e4e gui=bold ctermfg=235 ctermbg=239 cterm=bold
 hi Exception guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi Keyword guifg=#a62843 guibg=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi Type guifg=#5f5f87 guibg=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
